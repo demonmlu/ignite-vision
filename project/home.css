@@ -16,3 +16,22 @@
 .hero .overline,.hero-stat .num,.hero-stat .label,.stat .num,.stat .label{text-box-trim:trim-both;text-box-edge:cap alphabetic}
 .sp-badge{line-height:10px}
 @media(max-width:360px){.nav-cta{display:none}.menu-toggle{margin-left:auto}}
+
+.hero-stat .week-unit{letter-spacing:0;white-space:nowrap}
+@media(max-width:900px){.menu-toggle{margin-left:auto}}
+.hero-stat .num:has(.week-unit){white-space:nowrap}
+@media(max-width:600px){.hero-stat .num:has(.week-unit){font-size:clamp(26px,7.5vw,34px)}}
+
+/* Confirmed white fixed navigation — Figma 229:3784. */
+.nav-fixed{position:fixed;background:#fff;color:#808080;z-index:100}
+html:has(.nav-fixed){scroll-padding-top:96px}
+@media(max-width:900px){.nav-fixed .menu-toggle{color:#333;border-color:#0003}.nav-fixed .nav-links{background:#fff;border-top-color:#0001;max-height:calc(100dvh - 76px);overflow-y:auto}}
+@media(max-width:600px){html:has(.nav-fixed){scroll-padding-top:100px}}
+
+.nav-fixed .nav-inner{padding:16px 64px;min-height:72px}
+.nav-fixed .brand-nav{width:130px;height:40px}
+.nav-fixed .brand-nav img{transform:scale(.591)}
+@media(min-width:901px){.nav-fixed .nav-links{gap:48px}.nav-fixed .nav-link{font-size:16px}}
+@media(min-width:901px) and (max-width:1100px){.nav-fixed .nav-inner{padding-inline:32px}.nav-fixed .nav-links{gap:24px}}
+@media(max-width:900px){.nav-fixed .nav-inner{padding:16px 24px;min-height:76px}html:has(.nav-fixed){scroll-padding-top:100px}}
+@media(max-width:600px){.nav-fixed .nav-inner{padding-inline:20px}}

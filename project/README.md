@@ -25,3 +25,5 @@ Book a Demo / Request a Demo 暂时定位到联系区块；Contact Us 的正式�
 打开 `index.html` 可选择 Light / Dark；两张缩略图来自实际首页。两个版本右下角提供评审切换导航，切换时恢复当前区块及其相对阅读位置，支持手机。评审导航独立保存在 `review-nav.css` / `review-nav.js`，正式上线时可移除对应引用。
 
 当前仍是本地预览，尚未部署；远程分享需将整个 project 目录发布到静态托管地址。
+
+Dark 已采用 Light 的照片 Challenge 卡片及数字滚动。两版交互现统一由 `home-interactions.css` / `home-interactions.js` 提供；`home-light.js` 为旧文件，不再被页面引用。
