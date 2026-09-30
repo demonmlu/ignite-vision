@@ -43,3 +43,11 @@ Hero 接入完整共享背景引擎的 `platform-hub-dark-v2`（version 2），�
 设计稿待确认文案：Hero 的 Verocity、部分英文连字、重复的 Audience Match 标签；当前保留设计稿原文。本页为未发布的设计验证页面。
 
 - Platform 独立保存本次来源完整引擎为 `project/platform-backgrounds.js`（包含来源最新库），不改变 About 已接入的引擎文件。
+
+
+## Solutions
+
+入口 `solutions.html`，依据 Figma `384:9568`；页面样式与交互为 `solutions.css` / `solutions.js`，原稿素材位于 `assets/solutions/`。四类方案、Key Benefits 和合作计费卡片均支持手机单列，沿用固定导航、页脚和内容渐现。
+Hero 使用 `solutions-adaptive-dark-v2`（version 2，待视觉确认），完整原始引擎单独提取为 `solutions-backgrounds.js`，未引入预览界面；照片按稿保留。pagehide 销毁，pageshow 重建。
+验证六档宽度、素材、手机菜单、动效、减少动态效果、Canvas 回退与清理。询价链接暂到 home.html#contact。
+待确认原稿文案包括 Verocity、PRICNG MODELS、ot APAC markets 和英文连字，未自行更改。当前为未发布的设计验证页面。
