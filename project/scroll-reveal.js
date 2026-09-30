@@ -2,7 +2,7 @@
 (()=>{
  const reduced=matchMedia('(prefers-reduced-motion: reduce)');
  if(reduced.matches||!('IntersectionObserver' in window))return;
- const targets=document.querySelectorAll('main > .trust-bar .trust-bar-inner, main > .section .section-title, main > .section .card-grid-4 > *, main > .section .card-grid-3 > *, main > .section .card-grid-2 > *, main > .stats-band .stat, main > .contact .cta-block');
+ const targets=[...document.querySelectorAll('[data-reveal], main > .trust-bar .trust-bar-inner, main > .section .section-title, main > .section .card-grid-4 > *, main > .section .card-grid-3 > *, main > .section .card-grid-2 > *, main > .stats-band .stat, main > .contact .cta-block')].filter(el=>!el.closest('header, footer, .hero, .about-hero, [data-reveal-exclude]'));
  const observer=new IntersectionObserver(entries=>{
   entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('reveal-visible');observer.unobserve(entry.target)}});
  },{rootMargin:'0px 0px -60px 0px',threshold:0});

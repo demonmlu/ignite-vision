@@ -27,3 +27,19 @@ Book a Demo / Request a Demo 暂时定位到联系区块；Contact Us 的正式�
 当前仍是本地预览，尚未部署；远程分享需将整个 project 目录发布到静态托管地址。
 
 Dark 已采用 Light 的照片 Challenge 卡片及数字滚动。两版交互现统一由 `home-interactions.css` / `home-interactions.js` 提供；`home-light.js` 为旧文件，不再被页面引用。
+
+## About
+
+入口 `about.html`，依据 Figma `370:7984`（2026-09-30），使用 `about.css` / `about.js` 和 `assets/about/`；共用首页基础样式及固定导航规范。Home 的 About 链接已接入。已检查六档桌面/手机宽度及素材加载。
+
+待内容确认：团队姓名仍为 Figma 的 Name Name；历程首项 2017 在 2010 之前，按设计稿保留。
+
+
+## Platform
+
+入口 `platform.html`，依据 Figma `370:8519`；使用 `platform.css`、`platform.js`、`assets/platform/`，复用固定导航、页脚及全站滚动渐现。
+Hero 接入完整共享背景引擎的 `platform-hub-dark-v2`（version 2），按本次交接保留待视觉确认状态；pagehide 销毁，pageshow 重建。
+已检查 1920、1440、1024、768、390、320px、图片加载、手机菜单、减少动态效果及动画清理。
+设计稿待确认文案：Hero 的 Verocity、部分英文连字、重复的 Audience Match 标签；当前保留设计稿原文。本页为未发布的设计验证页面。
+
+- Platform 独立保存本次来源完整引擎为 `project/platform-backgrounds.js`（包含来源最新库），不改变 About 已接入的引擎文件。
