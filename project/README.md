@@ -51,3 +51,10 @@ Hero 接入完整共享背景引擎的 `platform-hub-dark-v2`（version 2），�
 Hero 使用 `solutions-adaptive-dark-v2`（version 2，待视觉确认），完整原始引擎单独提取为 `solutions-backgrounds.js`，未引入预览界面；照片按稿保留。pagehide 销毁，pageshow 重建。
 验证六档宽度、素材、手机菜单、动效、减少动态效果、Canvas 回退与清理。询价链接暂到 home.html#contact。
 待确认原稿文案包括 Verocity、PRICNG MODELS、ot APAC markets 和英文连字，未自行更改。当前为未发布的设计验证页面。
+
+
+## 2026-10-09 内容更新
+
+Home、About、Solutions 已同步当日指定 Figma 稿：精简 Home 平台区块与 About 团队区，更新统计、故事、历程、方案文案，移除 Solutions 计费区。About 首项成立年份经用户确认使用 2007。三页页脚新增 Investors；Hero 和内容交互保留。最新 SVG 位于 assets/revision-20261009/，不覆盖其他页面。
+
+Platform 于 2026-10-09 按 Figma 370:8519 最新稿同步：ChineseAN / Starry 布局、内容和能力卡已更新；保留原有背景及滚动动效。已检查 320–1920px 六种宽度的溢出、素材加载及脚本错误。

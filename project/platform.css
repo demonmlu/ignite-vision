@@ -10,3 +10,27 @@
 .scores .score-track,.scores .score-track i{display:block;font-style:normal}
 .scores .score-track i{height:1em;line-height:1em}
 .score-bars span{transform-origin:center bottom}
+/* Platform frame 370:8519 — approved Figma layout. */
+.intelligence{align-items:start}.engine-description{margin:64px 0 0}
+.platform-products{padding:64px 0}.platform-products .section-title{text-align:left;padding:64px 0}.platform-products .section-title .overline{font-size:20px;letter-spacing:4px}
+.affiliate-block{padding:64px 0}.affiliate-intro{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px;padding:24px 0;background:linear-gradient(to right,transparent 50%,#f7f7f7);border-radius:24px}
+.affiliate-intro p,.starry-intro p{font-size:18px;line-height:1.7;letter-spacing:.54px;margin-top:24px}
+.affiliate-logo{position:relative;width:521px;max-width:100%;aspect-ratio:196/32}.affiliate-logo img{position:absolute;top:9.38%;left:.51%;width:98.98%;height:82.41%;object-fit:contain}
+.affiliate-intro ul{padding:20px 40px;display:flex;flex-direction:column;justify-content:center;gap:12px;color:#808080;font-size:16px;line-height:1.7;letter-spacing:.48px;list-style:disc}
+.affiliate-block .capabilities,.starry-block .capabilities{margin-top:64px}.starry-intro{padding:24px 0 0;background:linear-gradient(to right,transparent 50%,#f7f7f7);border-radius:24px}.starry-brand{height:110px;width:289px;max-width:100%;display:flex;align-items:center;justify-content:center}.starry-brand img{width:284.091px;max-width:100%;height:auto}
+@media(max-width:1000px){.affiliate-intro{grid-template-columns:1fr;gap:24px}.affiliate-intro ul{padding:24px 32px}.platform-products .section-title .overline{font-size:16px;letter-spacing:3px}}
+@media(max-width:600px){.platform-products{padding:32px 0}.platform-products .section-title{padding:24px 0}.platform-products .section-title .overline{font-size:12px;letter-spacing:2.4px}.affiliate-block{padding:24px 0}.affiliate-intro p,.starry-intro p{font-size:16px;letter-spacing:.3px}.affiliate-intro ul{padding:16px 24px}.affiliate-block .capabilities,.starry-block .capabilities{margin-top:32px}.engine-description{margin-top:24px}}
+.affiliate-intro>div{min-width:0}
+@media(max-width:1000px){.affiliate-intro{grid-template-columns:minmax(0,1fr)}}
+/* Latest Figma: full-width introduction and three supporting statements. */
+.affiliate-current{display:flex;flex-direction:column;gap:0;padding:24px 0;background:none}
+.affiliate-current .affiliate-logo{width:392px;margin-bottom:40px}
+.affiliate-current .affiliate-copy p{margin:0}
+.affiliate-current ul{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;padding:0;margin:16px 0 0;list-style:none}
+.affiliate-current li{padding:20px;border-radius:16px;background:linear-gradient(transparent,rgba(247,247,247,.5))}
+.capabilities p{font-size:16px;letter-spacing:.48px}
+.starry-intro{padding:48px 0 24px;background:none}
+.starry-brand{width:209px;height:80px;position:relative;display:block;overflow:hidden}
+.starry-brand img{position:absolute;left:1.78px;top:3.7px;width:284.091px;max-width:none;height:98.3906px;transform:scale(.7231,.7272);transform-origin:top left}
+.starry-intro p{margin-top:40px}
+@media(max-width:700px){.affiliate-current ul{grid-template-columns:minmax(0,1fr);gap:12px}.affiliate-current .affiliate-logo{margin-bottom:28px}.starry-intro p{margin-top:28px}}
