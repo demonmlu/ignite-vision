@@ -45,3 +45,16 @@ html:has(.nav-fixed){scroll-padding-top:96px}
 .home-current .cta-block p{max-width:none;color:#ccc}
 @media(max-width:900px){.home-current .stats-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:32px}.home-current .cta-block h2{font-size:36px}}
 @media(max-width:600px){.home-current .stats-heading{font-size:12px;letter-spacing:2.4px;margin-bottom:32px}.home-current .stat .num{font-size:36px}.home-current .stat .label{font-size:12px}.home-current .cta-block h2{font-size:30px;line-height:1.15}.home-current .cta-block>.overline{font-size:12px;letter-spacing:2.4px}}
+/* Home client logos: equal image height, natural width, continuous two-row strip. */
+.brand-marquee{margin-top:40px;overflow-x:auto;scrollbar-width:none;mask-image:linear-gradient(to right,transparent,#000 32px,#000 calc(100% - 32px),transparent);touch-action:pan-x pan-y}
+.brand-marquee::-webkit-scrollbar{display:none}
+.brand-marquee:focus-visible{outline:2px solid var(--red);outline-offset:8px}
+.brand-track,.brand-set{display:flex;width:max-content;align-items:center}
+.brand-set{gap:48px;padding-right:48px;flex:none}
+.brand-set img{display:block;height:95px;width:auto;max-width:none;flex:none}
+@media(max-width:600px){.brand-marquee{margin-top:28px;mask-image:linear-gradient(to right,transparent,#000 16px,#000 calc(100% - 16px),transparent)}.brand-set{gap:32px;padding-right:32px}.brand-set img{height:85px}}
+.brand-marquee{user-select:none;-webkit-user-select:none}
+.brand-marquee.has-drag-cursor,.brand-marquee.has-drag-cursor *{cursor:none}
+.brand-drag-cursor{position:fixed;width:60px;height:60px;object-fit:contain;pointer-events:none;z-index:10000;transform:translate(-50%,-50%);display:none}
+.brand-drag-cursor.is-visible{display:block}
+.brand-drag-cursor.is-dragging{transform:translate(-50%,-50%) scale(.9)}

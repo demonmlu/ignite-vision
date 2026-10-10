@@ -11,3 +11,7 @@
 @media(max-width:1399px) and (min-width:601px){.challenge .card-grid-4{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .hero-stat .num{position:relative}.stat-reel-overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;white-space:pre;letter-spacing:inherit;pointer-events:none}.stat-reel-digit{display:inline-block;height:1em;line-height:1em;overflow:hidden;width:.62em;font-variant-numeric:tabular-nums}.stat-reel-track{display:block;will-change:transform}.stat-reel-track span{display:block;height:1em;line-height:1em}.stat-reel-original{opacity:0}
 @media(max-width:600px){.challenge-card{min-height:429px}.challenge-card h3{font-size:24px}}
+
+/* Temporary opt-out: retain answer layout and source for easy restoration. */
+[data-card-interaction="disabled"] .challenge-toggle{display:none}
+[data-card-interaction="disabled"] .challenge-card .answer{visibility:hidden!important;opacity:0!important;pointer-events:none}

@@ -2,6 +2,8 @@
 (()=>{
  const hover=matchMedia('(hover:hover) and (pointer:fine)');
  document.querySelectorAll('.challenge-card').forEach(card=>{
+  // Temporary Home-only switch; retain all reveal behavior for restoration.
+  if(card.closest('[data-card-interaction="disabled"]')) return;
   const button=card.querySelector('.challenge-toggle'),answer=card.querySelector('.answer');
   let pinned=false,over=false,focused=false;
   const render=()=>{const open=pinned||over||focused;card.classList.toggle('is-open',open);button.setAttribute('aria-expanded',String(open));answer.setAttribute('aria-hidden',String(!open));};
