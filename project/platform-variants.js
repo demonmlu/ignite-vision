@@ -1,6 +1,7 @@
 (() => {
  const root=document.querySelector('.platform-comparison');
- if(!root)return;
+ // Preserve scheme two without initializing observers, events or animation timers.
+ if(!root||root.dataset.comparisonEnabled==='false')return;
  const conservative=document.querySelector('#platform-conservative');
  const interactive=document.querySelector('#platform-interactive');
  let enabled=true,raf=0,last=0;

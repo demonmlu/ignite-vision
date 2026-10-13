@@ -43,3 +43,18 @@
 @media(max-width:1000px){.pi-columns{grid-template-columns:1fr;gap:24px}.pi-copy{max-width:none}.pi-product{padding:40px 0 64px}.pi-heading h2{flex-basis:100%}.pi-switch{margin-top:20px}}
 @media(max-width:600px){.platform-comparison{padding-top:32px}.pi-copy p{font-size:16px}.pi-columns{margin-top:16px}.pi-card{padding:20px 16px}.pi-trigger{font-size:20px}.pi-copy ul{margin-top:24px}.pi-progress{left:16px;right:16px}}
 @media(prefers-reduced-motion:reduce){.pi-card,.pi-body{transition:none}}
+
+/* Approved conservative presentation — 2026-10-13. */
+.intelligence{grid-template-columns:minmax(0,1fr);text-align:center}
+.intelligence .section-title{text-align:center}
+.intelligence .engine-description{max-width:75vw;margin-left:auto;margin-right:auto}
+.pi-heading .section-title{text-align:center;justify-content:center}
+#platform-conservative .affiliate-current .affiliate-logo{margin-left:auto;margin-right:auto}
+#platform-conservative .affiliate-copy{width:100%;max-width:75vw;margin-left:auto;margin-right:auto;text-align:center}
+#platform-conservative .starry-brand{margin-left:auto;margin-right:auto}
+#platform-conservative .starry-intro p{max-width:75vw;margin-left:auto;margin-right:auto;text-align:center}
+
+/* Bring the partnership heading and ChineseAN logo closer together. */
+.platform-comparison[data-variant="one"] .pi-heading .section-title{padding-bottom:16px}
+#platform-conservative .affiliate-block{padding-top:24px}
+@media(max-width:600px){#platform-conservative .affiliate-block{padding-top:16px}}
