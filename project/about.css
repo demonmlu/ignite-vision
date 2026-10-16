@@ -8,3 +8,15 @@
 .about-hero>.about-width,.about-photo{position:relative;z-index:1}
 @media(max-width:1000px){.about-hero{--about-photo-height:600px}}
 @media(max-width:600px){.about-hero{--about-photo-height:380px}}
+
+/* Connected milestone timeline — Figma 370:8019, 2026-10-15. */
+.timeline-connected{width:840px;max-width:100%;gap:0}
+.timeline-connected li{position:relative;gap:4px;padding:16px 0}
+.journey-marker{position:relative;flex:0 0 56px;height:40px;display:flex;align-items:center;justify-content:center}
+.journey-marker img{display:block;transform:rotate(-89.94deg)}
+.journey-marker span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;color:#fff}
+.journey-line{position:absolute;top:0;bottom:0;left:27.5px;width:1px;background-size:100% 100%;background-repeat:no-repeat}
+.journey-line-top{bottom:36px}
+.journey-copy{position:relative;flex:1;min-width:0}
+.journey-copy h3{font-size:24px;line-height:normal;font-weight:700;color:#fff;margin-bottom:2px}
+.timeline-connected .journey-copy p{font-size:16px;line-height:1.7;letter-spacing:.48px;color:#b3b3b3}

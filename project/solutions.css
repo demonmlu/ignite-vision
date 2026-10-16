@@ -2,3 +2,47 @@
 @media(max-width:1500px){.solutions-width{width:calc(100% - 96px)}.solutions-intro{width:75%}.solutions-intro h1{font-size:52px}.solution-grid{grid-template-columns:1fr 1.1fr}.benefits{padding:32px}.pricing-grid h3{font-size:28px}}
 @media(max-width:1000px){.solutions-intro{width:100%}.solutions-hero{--photo-height:420px}.solution-grid{grid-template-columns:1fr;gap:32px;padding:32px 0}.solution-section{padding:32px 0 64px}.benefits{min-height:0}.pricing-grid{grid-template-columns:1fr;gap:48px}.pricing-grid p{color:#b3b3b3}}
 @media(max-width:600px){.solutions-width{width:calc(100% - 40px)}.solutions-hero{padding-top:128px;--photo-height:300px}.solutions-intro{min-height:330px}.solutions-intro h1{font-size:36px;letter-spacing:1px}.solutions-intro .overline{font-size:12px;letter-spacing:2.4px}.solutions-intro p{font-size:15px;line-height:1.8}.solution-section{padding:24px 0 40px}.solution-grid{padding:24px 0}.solution-description,.benefits li{font-size:16px}.benefits{padding:24px 20px}.benefits h3{font-size:18px}.pricing{padding:32px 0 48px}.pricing-grid{padding-bottom:24px}.pricing-grid h3{font-size:26px}.pricing-grid p{font-size:16px}.pricing-badge{left:24px;font-size:12px}}
+
+/* Solutions Figma 384:9568 — 2026-10-16. */
+.solutions-hero{--photo-height:540px}
+.solution-layout{padding:64px 0}
+.solution-layout>.section-title{text-align:left;padding:0;margin-bottom:24px}
+.solution-grid{grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch;padding:0}
+.solution-challenge{background:#f7f7f7;color:#b3b3b3;font-weight:300}
+.solution-copy .benefits{min-height:0;padding:24px 0}
+.benefits h3{margin-bottom:16px}
+.benefits ul{gap:4px}
+@media(max-width:1000px){.solutions-hero{--photo-height:420px}.solution-layout{padding:32px 0}.solution-grid{grid-template-columns:1fr}}
+@media(max-width:600px){.solutions-hero{--photo-height:300px}.solution-layout{padding:24px 0}}
+
+/* Figma imagery and separate gradient overlay. */
+.solution-visual{position:relative;overflow:hidden;background:#fff;min-width:0;align-self:stretch}
+.solution-visual>img{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;opacity:.6;border-radius:0 24px 24px 0}
+.solution-visual::after{content:"";position:absolute;inset:0 auto 0 0;width:45.714%;background:linear-gradient(to right,#fff,rgba(255,255,255,0));pointer-events:none}
+/* A stacked image keeps its original composition rather than cropping the UI on phones. */
+@media(max-width:1000px){
+ .solution-visual{aspect-ratio:4/3;min-height:0}
+ .solution-visual:has(>img){aspect-ratio:auto;background:#fff}
+ .solution-visual>img{position:relative;height:auto;object-fit:contain}
+ .solution-visual::after{width:20%}
+}
+
+.solution-challenge strong{font-weight:500}
+#solution-3 .solution-challenge{color:#1a1a1a}
+
+/* Complete solution blocks: Figma 642:4120, 391:10144, 391:10195, 391:10246. */
+.solution-grid{grid-template-columns:minmax(0,740fr) minmax(0,700fr);gap:0;background:#fff}
+.solution-copy{min-width:0;padding:0 40px 0 0;gap:24px}
+.solution-challenge,#solution-3 .solution-challenge{padding:16px 0;color:#808080;font-weight:400;background:transparent;border-radius:0}
+.solution-description{line-height:1.5}
+.solution-copy .benefits{background:none;border-radius:0;padding:24px 0}
+.solution-copy .benefits h3{font-size:18px;color:var(--red);margin-bottom:8px}
+.solution-copy .benefits ul{gap:0}
+.solution-copy .benefits li{font-weight:400;padding:4px 0;gap:4px}
+@media(max-width:1000px){
+ .solution-grid{grid-template-columns:minmax(0,1fr)}
+ .solution-copy{padding:0}
+ .solution-visual>img{border-radius:24px}
+ .solution-visual::after{inset:0 0 auto;width:100%;height:20%;background:linear-gradient(to bottom,#fff,rgba(255,255,255,0))}
+}
+

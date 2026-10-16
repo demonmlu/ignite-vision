@@ -58,3 +58,31 @@
 .platform-comparison[data-variant="one"] .pi-heading .section-title{padding-bottom:16px}
 #platform-conservative .affiliate-block{padding-top:24px}
 @media(max-width:600px){#platform-conservative .affiliate-block{padding-top:16px}}
+
+/* Latest Platform Figma 370:8519 — 2026-10-15. */
+.platform-engine{padding-bottom:0}
+.intelligence .engine-description{max-width:none;margin-top:16px}
+.platform-comparison{padding-top:0;padding-bottom:64px}
+.platform-comparison[data-variant="one"] .pi-heading .section-title{padding:64px 0 0}
+#platform-conservative .platform-products{padding:0}
+#platform-conservative .affiliate-block{padding:8px 0 128px}
+#platform-conservative .affiliate-current{padding:0}
+#platform-conservative .affiliate-current .affiliate-logo{width:487px;aspect-ratio:487/80;margin-bottom:40px}
+#platform-conservative .affiliate-copy,#platform-conservative .starry-intro p{width:840px;max-width:100%;color:#808080}
+#platform-conservative .affiliate-current ul{width:960px;max-width:100%;margin:16px auto 0;padding:16px 0;gap:0}
+#platform-conservative .affiliate-current li{padding:8px 16px;min-height:136px;display:flex;align-items:center;text-align:center;font-size:15px;letter-spacing:.45px;background:none;border-radius:0}
+#platform-conservative .affiliate-current li:nth-child(2){border-left:1px solid #e6e6e6;border-right:1px solid #e6e6e6}
+#platform-conservative .affiliate-block .capabilities{margin-top:24px;padding:64px 0}
+#platform-conservative .starry-block{padding:64px 0}
+#platform-conservative .starry-intro{padding:0 0 24px}
+#platform-conservative .starry-brand{width:280px;height:107px}
+#platform-conservative .starry-brand img{left:2.38px;top:4.94px;transform:scale(.9688,.9727)}
+#platform-conservative .starry-intro p{margin-top:40px}
+#platform-conservative .starry-block .capabilities{margin-top:0;padding:64px 0}
+#platform-conservative .capabilities{align-items:stretch}
+#platform-conservative .capabilities p{color:#000}
+#how-it-works{padding-top:0}
+.steps h3{color:var(--red)}
+@media(max-width:700px){#platform-conservative .affiliate-current li{min-height:0;padding:16px}#platform-conservative .affiliate-current li:nth-child(2){border:0;border-top:1px solid #e6e6e6;border-bottom:1px solid #e6e6e6}}
+@media(max-width:600px){.platform-comparison[data-variant="one"] .pi-heading .section-title{padding-top:32px}#platform-conservative .affiliate-block{padding-bottom:48px}#platform-conservative .affiliate-block .capabilities,#platform-conservative .starry-block .capabilities{padding:32px 0}#platform-conservative .starry-block{padding:32px 0}.platform-comparison{padding-bottom:32px}}
+#platform-conservative .starry-brand img{width:275.244px;height:95.708px;transform:none}
