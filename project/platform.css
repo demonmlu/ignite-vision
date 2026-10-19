@@ -63,7 +63,7 @@
 .platform-engine{padding-bottom:0}
 .intelligence .engine-description{max-width:none;margin-top:16px}
 .platform-comparison{padding-top:0;padding-bottom:64px}
-.platform-comparison[data-variant="one"] .pi-heading .section-title{padding:64px 0 0}
+.platform-comparison[data-variant="one"] .pi-heading .section-title{padding:64px 0 40px}
 #platform-conservative .platform-products{padding:0}
 #platform-conservative .affiliate-block{padding:8px 0 128px}
 #platform-conservative .affiliate-current{padding:0}
@@ -86,3 +86,16 @@
 @media(max-width:700px){#platform-conservative .affiliate-current li{min-height:0;padding:16px}#platform-conservative .affiliate-current li:nth-child(2){border:0;border-top:1px solid #e6e6e6;border-bottom:1px solid #e6e6e6}}
 @media(max-width:600px){.platform-comparison[data-variant="one"] .pi-heading .section-title{padding-top:32px}#platform-conservative .affiliate-block{padding-bottom:48px}#platform-conservative .affiliate-block .capabilities,#platform-conservative .starry-block .capabilities{padding:32px 0}#platform-conservative .starry-block{padding:32px 0}.platform-comparison{padding-bottom:32px}}
 #platform-conservative .starry-brand img{width:275.244px;height:95.708px;transform:none}
+
+/* Platform Figma 370:8519 — 2026-10-20 compact connected notes. */
+#platform-conservative .affiliate-current ul{display:flex;flex-direction:column;width:720px;max-width:100%;gap:0;margin:0 auto;padding:16px 0}
+#platform-conservative .affiliate-current li{position:relative;display:flex;align-items:center;gap:8px;min-height:0;padding:8px 0;text-align:left;font-size:15px;line-height:1.5;letter-spacing:.45px;border:0;background:none}
+#platform-conservative .affiliate-current li:nth-child(2){border:0}
+.affiliate-note-dot{position:relative;z-index:1;display:flex;justify-content:center;align-items:center;flex:0 0 22px;align-self:stretch}
+.affiliate-note-dot img{display:block;transform:rotate(-89.94deg)}
+.affiliate-note-line{position:absolute;left:11px;top:0;bottom:0;width:1px;background-size:100% 100%;background-repeat:no-repeat}
+.affiliate-current li:first-child .affiliate-note-line{top:50%}
+.affiliate-current li:last-child .affiliate-note-line{bottom:50%}
+#platform-conservative .affiliate-current li>span:last-child{flex:1;min-width:0}
+#platform-conservative .affiliate-block .capabilities{margin-top:24px;padding-top:64px}
+@media(max-width:600px){#platform-conservative .affiliate-block .capabilities{padding-top:40px}}
