@@ -97,5 +97,5 @@
 .affiliate-current li:first-child .affiliate-note-line{top:50%}
 .affiliate-current li:last-child .affiliate-note-line{bottom:50%}
 #platform-conservative .affiliate-current li>span:last-child{flex:1;min-width:0}
-#platform-conservative .affiliate-block .capabilities{margin-top:24px;padding-top:64px}
-@media(max-width:600px){#platform-conservative .affiliate-block .capabilities{padding-top:40px}}
+#platform-conservative .affiliate-block .capabilities{margin-top:0;padding-top:64px}
+@media(max-width:600px){#platform-conservative .affiliate-block .capabilities{padding-top:32px}}
