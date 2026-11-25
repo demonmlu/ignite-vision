@@ -1,0 +1,11 @@
+(()=>{
+ const nav=document.querySelector('.nav-inner');if(!nav)return;
+ const records=[];const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);
+ while(walker.nextNode()){const node=walker.currentNode;if(node.parentElement.closest('script,style'))continue;const key=node.textContent.trim();if(window.siteZh[key])records.push({node,en:node.textContent,zh:node.textContent.replace(key,window.siteZh[key])});}
+ const box=document.createElement('div');box.className='language-picker';box.innerHTML='<button type="button" class="language-trigger" aria-label="Language / 语言" aria-expanded="false" aria-controls="language-options"><img src="assets/language/translate.svg" alt=""><span>EN</span><img src="assets/language/arrow.svg" alt=""></button><div id="language-options" hidden><button type="button" data-lang="en">English</button><button type="button" data-lang="zh-CN">简体中文</button></div>';nav.append(box);
+ const trigger=box.querySelector('.language-trigger'),options=box.querySelector('#language-options');let language='en';
+ function close(){options.hidden=true;trigger.setAttribute('aria-expanded','false');}
+ function apply(lang){language=lang==='zh-CN'?'zh-CN':'en';document.documentElement.lang=language;records.forEach(r=>r.node.textContent=language==='en'?r.en:r.zh);trigger.querySelector('span').textContent=language==='en'?'EN':'简中';box.querySelectorAll('[data-lang]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.lang===language)));try{localStorage.setItem('ignite-language',language)}catch{};document.querySelectorAll('a[href]').forEach(a=>{const href=a.getAttribute('href');if(/^(https?:|mailto:|tel:)/.test(href))return;const u=new URL(href,location.href);if(!u.pathname.endsWith('.html'))return;u.searchParams.set('lang',language);a.href=u.href;});close();}
+ trigger.onclick=()=>{options.hidden=!options.hidden;trigger.setAttribute('aria-expanded',String(!options.hidden));};box.querySelectorAll('[data-lang]').forEach(b=>b.onclick=()=>apply(b.dataset.lang));document.addEventListener('click',e=>{if(!box.contains(e.target))close()});box.addEventListener('keydown',e=>{if(e.key==='Escape'){close();trigger.focus()}});
+ let initial=new URLSearchParams(location.search).get('lang');if(!initial)try{initial=localStorage.getItem('ignite-language')}catch{}apply(initial);
+})();
