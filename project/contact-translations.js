@@ -1,0 +1,8 @@
+Object.assign(window.siteZh,{"CONTACT US": "联系我们", "Let’s build your next": "携手开启下一段", "great partnership.": "精彩合作。", "Connect with our team to explore how Ignite Vision can support your brand, your campaigns, and your next market.": "联系我们的团队，了解 Ignite Vision 如何助力你的品牌、营销活动和新市场拓展。", "START A CONVERSATION": "开启对话", "Your next opportunity": "下一次机遇，", "starts here.": "从这里开始。", "Tell us about your business and what you would like to achieve. Get in touch by email or use our existing enquiry form.": "与我们分享你的业务和目标。你可以发送邮件，或填写我们的咨询表单。", "Email our team": "发送邮件", "Open enquiry form": "打开咨询表单", "LOCAL CONNECTIONS": "本地团队", "Find your local team.": "联系当地团队。", "Connect with our offices across the region.": "与我们在各地区的办公室取得联系。", "Hong Kong": "香港", "HEADQUARTERS": "总部", "CHINA": "中国", "TAIWAN": "台湾", "Indonesia": "印度尼西亚", "SOUTHEAST ASIA": "东南亚", "Phone": "电话", "Fax": "传真", "Email": "电子邮件"});
+Object.assign(window.siteZh,{"Address":"地址"});
+
+
+
+Object.assign(window.siteZh,{"Tell us about your business and what you would like to achieve. Get in touch by email.": "与我们分享你的业务和目标，欢迎通过邮件联系我们。"});
+
+Object.assign(window.siteZh,{"Unit A, 16/F, Winland Square, 314–324 Hennessy Road, Wan Chai, Hong Kong": "香港湾仔轩尼诗道314-324号永伦立方16楼A室", "Units 2501–2503, East Tower, Fortune Plaza, 116 Tiyu East Road, Tianhe District, Guangzhou, China": "广州市天河区体育东路116号财富广场东塔2501-3", "18/F, Dianshi Building, No. 206, Section 1, Keelung Road, Xinyi District, Taipei, Taiwan": "台北信义区基隆路一段206号点石大楼18楼", "Room 1605, 16/F, North Tower, Official Soho and Apartment Upper West BSD, Jl. Raya BSD, CDB 55, Sampora, Kec. Pagedangan, Kabupaten Tangerang, Banten 15339": "印度尼西亚万丹省丹格朗县 Pagedangan 区 Sampora，Jl. Raya BSD，CDB 55，Official Soho and Apartment Upper West BSD 北塔16楼1605室，邮编15339"});
