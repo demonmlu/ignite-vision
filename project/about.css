@@ -24,3 +24,18 @@
 
 /* Fade the animated layer into the same black used by the photo overlay. */
 .about-motion{-webkit-mask-image:linear-gradient(to bottom,#000 0,#000 calc(100% - 120px),transparent 100%);mask-image:linear-gradient(to bottom,#000 0,#000 calc(100% - 120px),transparent 100%)}
+
+/* Compact intro and photograph, approved 2026-11-26. */
+.about-hero{padding-top:144px;--about-photo-height:clamp(320px,28vw,420px)}
+.about-intro{min-height:0;padding-bottom:40px}
+.about-intro p{padding-bottom:0}
+.about-photo{height:var(--about-photo-height)}
+.about-photo img{object-fit:cover;object-position:center}
+@media(max-width:600px){
+ .about-hero{padding-top:112px;--about-photo-height:220px}
+ .about-intro{padding-bottom:40px}
+}
+
+/* Keep the mission cards below faces in the compact hero photograph. */
+.mission-grid{margin-top:-32px}
+@media(max-width:600px){.mission-grid{margin-top:0}}

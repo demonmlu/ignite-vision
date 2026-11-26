@@ -49,3 +49,16 @@
 
 /* Fade the animated layer into the same black used by the photo overlay. */
 .solutions-motion{-webkit-mask-image:linear-gradient(to bottom,#000 0,#000 calc(100% - 120px),transparent 100%);mask-image:linear-gradient(to bottom,#000 0,#000 calc(100% - 120px),transparent 100%)}
+/* Preserve the full 8:3 hero photograph on desktop/tablet. Mobile uses cover. */
+@media(min-width:601px){.solutions-hero{--photo-height:37.5vw}}
+
+/* Compact intro and photograph, approved 2026-11-26. */
+.solutions-hero{padding-top:144px;--photo-height:clamp(360px,32vw,480px)}
+.solutions-intro{min-height:0;padding-bottom:40px}
+.solutions-intro p{padding-bottom:0}
+.solutions-photo{height:var(--photo-height)}
+.solutions-photo img{object-fit:cover;object-position:center}
+@media(max-width:600px){
+ .solutions-hero{padding-top:112px;--photo-height:240px}
+ .solutions-intro{padding-bottom:40px}
+}
