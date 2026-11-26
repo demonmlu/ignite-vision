@@ -2,3 +2,5 @@ window.siteZh={"A global affiliate marketing platform which works primarily on p
 Object.assign(window.siteZh,{"ChineseAN Affiliate Network": "ChineseAN 联盟网络", "Starry KOL Platform": "Starry KOL 平台", "How Starry Works": "Starry 运作流程", "Mission & Vision": "使命与愿景", "Our Story": "我们的故事", "Milestones": "发展历程"});
 
 Object.assign(window.siteZh,{"Blog":"博客"});
+
+Object.assign(window.siteZh,{"Indonesia":"印尼"});
