@@ -21,3 +21,6 @@
 .journey-copy{position:relative;flex:1;min-width:0}
 .journey-copy h3{font-size:24px;line-height:normal;font-weight:700;color:#fff;margin-bottom:2px}
 .timeline-connected .journey-copy p{font-size:16px;line-height:1.7;letter-spacing:.48px;color:#b3b3b3}
+
+/* Fade the animated layer into the same black used by the photo overlay. */
+.about-motion{-webkit-mask-image:linear-gradient(to bottom,#000 0,#000 calc(100% - 120px),transparent 100%);mask-image:linear-gradient(to bottom,#000 0,#000 calc(100% - 120px),transparent 100%)}
