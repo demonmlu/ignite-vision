@@ -13,13 +13,13 @@
 
 
 
-// Candidate background: contact-meeting-dark-v1, v1; pending visual approval.
+// Candidate background: contact-coverage-dark-v2, v2; pending visual approval.
 (()=>{
- const hero=document.querySelector('.contact-hero');
+ const hero=document.querySelector('.contact-background');
  let background;
  function mount(){
   if(hero && window.IgniteBackgrounds && !background){
-   background=IgniteBackgrounds.mount(hero,{preset:'contact-meeting-dark-v1'});
+   background=IgniteBackgrounds.mount(hero,{preset:'contact-coverage-dark-v2'});
   }
  }
  function destroy(){background?.destroy();background=null;}

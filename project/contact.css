@@ -31,3 +31,52 @@
 .office-headquarters{display:inline-flex;align-items:center;border:1px solid #cb302930;border-radius:4px;padding:4px 8px;color:var(--red);font-size:10px;font-weight:600;line-height:1.4;letter-spacing:1px}
 @media(max-width:600px){.office-heading{min-height:32px;gap:8px 12px}.office-headquarters{font-size:9px;letter-spacing:.7px}}
 @media(min-width:601px) and (max-width:1000px), (max-width:360px){.contact-office .office-heading h3{font-size:22px}.office-heading{gap:8px}.office-headquarters{font-size:8px;letter-spacing:.5px;padding:4px 6px}}
+
+/* Candidate: text-first office rows, without embedded maps. */
+.contact-offices{background:#fff}
+.contact-office-grid{display:block;border-top:1px solid #111}
+.contact-office{display:grid;grid-template-columns:1fr 1.15fr 1fr;gap:48px;padding:48px 0;border-radius:0;box-shadow:none;border-bottom:1px solid #e6e6e6;align-items:start}
+.contact-office .office-heading{margin:0;align-items:center;justify-content:flex-start}
+.contact-office .office-heading h3{font-size:32px;line-height:1.2}
+.contact-office dl{margin:0}
+.contact-office .office-address-details>div{display:block}
+.office-address-details dt{margin-bottom:12px;font-size:14px}
+.office-address-details dd{line-height:1.8}
+.contact-office .office-contact-details>div{grid-template-columns:52px minmax(0,1fr);gap:16px}
+@media(max-width:1000px){.contact-office{grid-template-columns:.8fr 1fr;gap:28px}.office-contact-details{grid-column:2}.contact-office .office-heading h3{font-size:28px}}
+@media(max-width:600px){.contact-office{grid-template-columns:1fr;gap:24px;padding:32px 0}.office-contact-details{grid-column:auto}.contact-office .office-heading h3{font-size:28px}.contact-office .office-contact-details>div{grid-template-columns:52px minmax(0,1fr)}}
+
+/* Office coverage and responsibilities follow the supplied reference. */
+.contact-office{grid-template-columns:1.05fr 1.15fr 1fr;padding:48px 0;gap:48px}
+.office-identity{padding-right:20px}
+.office-place{font-size:14px;line-height:1.7;color:#8a8a8a;margin-top:12px;letter-spacing:.3px}
+.office-services{font-size:15px;line-height:1.8;color:#666;border-top:1px solid #e6e6e6;margin-top:24px;padding-top:18px}
+.office-address-details dt{font-size:12px;letter-spacing:1px;text-transform:uppercase;color:#999}
+@media(max-width:1000px){.contact-office{grid-template-columns:1fr 1.2fr;gap:28px}.office-identity{grid-row:span 2}.office-contact-details{grid-column:2}}
+@media(max-width:600px){.contact-office{grid-template-columns:1fr;gap:28px;padding:36px 0}.office-identity{grid-row:auto;padding-right:0}.office-contact-details{grid-column:auto}.office-services{margin-top:18px;padding-top:14px}.office-place{margin-top:10px}}
+
+.contact-background{position:absolute;inset:0;overflow:hidden;height:100%;z-index:0}.contact-hero{min-height:570px}
+@media(max-width:600px){.contact-hero{min-height:570px}}
+
+/* City photograph candidate: identity / contact information / skyline. */
+.contact-office{grid-template-columns:1fr 1.2fr .95fr;gap:40px;align-items:start;padding:44px 0}
+.office-details{display:grid;gap:24px;min-width:0}.office-details .office-contact-details:empty{display:none}
+.office-city-photo{margin:0;overflow:hidden;border-radius:8px;aspect-ratio:3/2;background:#eee}
+.office-city-photo img{display:block;width:100%;height:100%;object-fit:cover;filter:saturate(.45) contrast(.95)}
+.office-identity{grid-row:auto}
+@media(max-width:1000px){.contact-office{grid-template-columns:1fr 1.2fr;gap:28px}.office-city-photo{grid-column:2}.office-details .office-contact-details{grid-column:auto}}
+@media(max-width:600px){.contact-office{grid-template-columns:1fr;gap:24px;padding:32px 0}.office-city-photo{grid-column:auto;aspect-ratio:16/9}.office-identity{grid-row:auto}}
+/* Contact revision from Figma 795:3483. */
+.contact-offices{padding:128px 0}.contact-section-heading{margin-bottom:24px}.contact-office-grid{border-top:0}
+.contact-office{grid-template-columns:30% minmax(0,1fr);gap:64px;padding:48px 0;scroll-margin-top:100px}
+.office-city-photo{grid-column:auto;position:relative;align-self:stretch;aspect-ratio:auto;border-radius:24px 0 0 24px;min-height:240px}
+.office-city-photo img{position:absolute;inset:0;opacity:.6;filter:none}
+.office-city-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 25%,#fff 100%)}
+.office-content{display:flex;flex-direction:column;gap:48px;min-width:0}.office-identity{padding:0}.office-place{margin-top:16px}.office-services{margin-top:4px;padding:0;border:0;font-size:14px;line-height:1.5;color:#808080}
+.office-details{gap:16px}.contact-office .office-details dl>div{display:grid;grid-template-columns:120px minmax(0,1fr);gap:16px;font-size:18px;line-height:1.3}.contact-office .office-details dt{color:#b3b3b3;font-size:18px;letter-spacing:0;text-transform:none;margin:0}.contact-office .office-details dd{line-height:1.3}.office-contact-details:empty{display:none}
+.contact-start{display:block;text-align:center;padding-top:128px;padding-bottom:192px;scroll-margin-top:100px}.contact-start h2{font-size:48px}.contact-actions{justify-content:center}.contact-team-email{display:flex;flex-direction:column;gap:8px;color:var(--red)}.contact-team-email span{font-size:14px}.contact-team-email strong{font-size:24px}
+
+@media(max-width:900px){.contact-office{gap:32px;grid-template-columns:30% minmax(0,1fr)}.office-content{gap:28px}.contact-office .office-details dl>div{grid-template-columns:72px minmax(0,1fr);font-size:16px}.contact-office .office-details dt{font-size:16px}}
+@media(max-width:600px){.contact-offices{padding:56px 0}.contact-office{grid-template-columns:1fr;gap:24px;padding:32px 0}.office-city-photo{min-height:0;aspect-ratio:16/9;border-radius:16px 16px 0 0}.office-city-photo:after{background:linear-gradient(180deg,transparent 35%,#fff)}.office-content{gap:24px}.contact-start{padding-top:56px;padding-bottom:72px}.contact-start h2{font-size:32px}.contact-team-email strong{font-size:22px}}
+@media(min-width:901px){.contact-hero{padding:192px 0 64px;min-height:609px}.contact-hero h1{line-height:1.2;letter-spacing:3.2px}.contact-hero p{font-size:16px;line-height:32.3px;max-width:706px}.contact-hero .contact-eyebrow{font-size:18px;letter-spacing:3.6px}}
+.contact-team-email:focus-visible{outline:2px solid var(--red);outline-offset:8px}
